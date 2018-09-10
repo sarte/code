@@ -14,7 +14,7 @@ ENDIF(NOT CMAKE_BUILD_TYPE)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
-  time_monitor
+  rqt_runtime_monitor
   sensor_msgs
   std_msgs
   cv_bridge
@@ -122,7 +122,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES dolphin_slam
-  CATKIN_DEPENDS roscpp time_monitor message_runtime
+  CATKIN_DEPENDS roscpp rqt_runtime_monitor message_runtime
 #  DEPENDS system_lib
 )
 
